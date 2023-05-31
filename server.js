@@ -27,8 +27,8 @@ findCars ()
 const findByName =async() =>{
     try {
         let carName ="Toyota"
-        const result = await car.find {name:carName}
-        console.log ("result")
+        const result = await car.find({name:carName})
+        console.log ("result", result)
     } catch (error) {
         console.log(error)
     }
